@@ -76,4 +76,5 @@ const Product = styled.div`
     margin-top: 10px;
     cursor: pointer;
 }
+
 `;
