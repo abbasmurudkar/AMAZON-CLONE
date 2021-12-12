@@ -14,9 +14,7 @@ function Checkout() {
                     {/* cart item here */}
                     {/* cart item here */}
                    {cart.map((item)=>(
-                           <>
                            <CheckoutProduct image={item.image} id={item.id} price={item.price} title={item.title}/>
-                           </>
                    ))}
                 </div>
 
@@ -35,9 +33,10 @@ export default Checkout;
 
 const Checkouts = styled.div`
     display: flex;
-    background-color: bisque;
+    background-color: #EAEDED;
     height: max-content;
     padding: 20px;
+
 
 .checkout__left{
     background-color: white;
@@ -51,6 +50,6 @@ const Checkouts = styled.div`
     margin-bottom: 10px;
 }
 .checkout__right{
-    background-color: cyan;
+    background-color: #EAEDED;
 }
 `;
