@@ -17,14 +17,11 @@ function Checkout() {
                            <CheckoutProduct image={item.image} id={item.id} price={item.price} title={item.title}/>
                    ))}
                 </div>
-
             </div>
-
             <div className="checkout__right">
                <Subtotal />
                     
             </div>
-            
         </Checkouts>
     );
 }
