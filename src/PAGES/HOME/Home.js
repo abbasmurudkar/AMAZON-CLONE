@@ -27,7 +27,7 @@ function Home() {
                         image="https://m.media-amazon.com/images/I/61KeIxmldLL._AC_UY218_.jpg"
                     />
                 </div>
-                
+
                 <div className="home--row">
                     <Products
                         id="04"
@@ -43,7 +43,7 @@ function Home() {
                         image="https://m.media-amazon.com/images/I/81LnZ7jN7pL._AC_UL320_.jpg"
                     />
                 </div>
-
+ 
                 <div className="home--row">
                     <Products
 
