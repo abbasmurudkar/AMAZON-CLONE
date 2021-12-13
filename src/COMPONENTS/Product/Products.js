@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useStateValue } from '../../CONTEXT/ContextApi';
 function Products({id, title, price, image }) {
  const [{cart}, dispatch] = useStateValue()
+
     const addToCart = () => {
     dispatch({
         type:"ADD_TO_CART",
@@ -21,7 +22,7 @@ function Products({id, title, price, image }) {
                 <p>{title}</p>
                 
                 <p className="product--price">
-                <bold>₹</bold>
+                <b>₹</b>
                 <strong>{price}</strong>
                 </p>
                 
