@@ -14,7 +14,6 @@ function CheckoutProduct({ id, title, price, image }) {
             </div>
 
         </CHECKOUTPRODUCT>
-
     )
 }
 
