@@ -17,7 +17,7 @@ function CheckoutProduct({ id, title, price, image }) {
     // const [{cart},dispatch] = useStateValue(getitems())
     // useEffect(() => {
     //     localStorage.setItem("cart",JSON.stringify(cart))
-    // }, [cart])
+    // }, [cart]) x
     return (
         <CHECKOUTPRODUCT className="checkoutProduct">
             <img className="checkoutProductImage" src={image} alt="Loading" />
