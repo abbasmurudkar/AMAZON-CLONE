@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import CheckoutProduct from '../../COMPONENTS/CHECKOUTPRODUCTS/CheckoutProduct';
 import Subtotal from '../../COMPONENTS/SUBTOTAL/Subtotal';
