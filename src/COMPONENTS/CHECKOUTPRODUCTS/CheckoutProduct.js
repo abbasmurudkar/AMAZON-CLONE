@@ -2,24 +2,20 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useStateValue } from '../../CONTEXT/ContextApi'
 function CheckoutProduct({ id, title, price, image }) {
-    // const cartFromLocalstorage = JSON.parse(localStorage.getItem("Cart"))
-    // const getitems = () =>{
-    //     let list = localStorage.getItem("cart")
-    //     console.log(list)
-    //     if(list)
-    //     {
-    //         return JSON.parse(localStorage.getItem("cart"))
-    //     }
-    //     else{
-    //         return []
-    //     }
-    // }
-    // const [{cart},dispatch] = useStateValue(getitems())
-    // useEffect(() => {
-    //     localStorage.setItem("cart",JSON.stringify(cart))
-    // }, [cart]) 
-    return (
-        <CHECKOUTPRODUCT className="checkoutProduct">
+    const [{cart}, dispatch] = useStateValue()
+    const removeFromCart = () =>{
+        dispatch(
+            {
+                type: "REMOVE_FROM_CART",
+                id: id,
+                item:{
+                    
+                }
+            }
+            )
+        }
+        return (
+            <CHECKOUTPRODUCT className="checkoutProduct">
             <img className="checkoutProductImage" src={image} alt="Loading" />
             <div className="checkoutProduct--Info">
                 <p className="checkoutProduct--title">{title}</p>
@@ -27,7 +23,7 @@ function CheckoutProduct({ id, title, price, image }) {
                     <b>₹</b>
                     <strong>{price}</strong>
                 </p>
-            <button>Remove From Cart</button>
+            <button onClick={removeFromCart}>Remove From Cart</button>
             </div>
 
         </CHECKOUTPRODUCT>
@@ -64,3 +60,20 @@ border-bottom: 2px solid #EAEDED;
     font-weight: 700;
 }
 `;
+
+// const cartFromLocalstorage = JSON.parse(localStorage.getItem("Cart"))
+// const getitems = () =>{
+//     let list = localStorage.getItem("cart")
+//     console.log(list)
+//     if(list)
+//     {
+//         return JSON.parse(localStorage.getItem("cart"))
+//     }
+//     else{
+//         return []
+//     }
+// }
+// const [{cart},dispatch] = useStateValue(getitems())
+// useEffect(() => {
+//     localStorage.setItem("cart",JSON.stringify(cart))
+// }, [cart]) 

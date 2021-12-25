@@ -37,11 +37,12 @@ function Header() {
                 <div className="header__nav">
 
                     {/* Box1 */}
-
+                    <Link to="/Login">
                     <div className="header__option">
                         <span className="header__optionlineOne">Hello Guest</span>
                         <span className="header__optionlineTwo">Sign In</span>
                     </div>
+                    </Link>
 
                     {/* Box2 */}
 
