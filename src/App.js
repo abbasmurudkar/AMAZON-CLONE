@@ -10,7 +10,7 @@ function App() {   //functional component 1)class component
   return (           //JSX MEANS WE ARE USING JAVASCRIPT+XML XML MEANS HTML
                      /*BEM:-BLOCK ELEMENT AND MODIFIER THIS IS USE TO HAVE CSS IN NEAT WAY*/ 
     <Switch>
-      <Route path="/login">
+      <Route path="/Login">
             <Login/>
       </Route>
        <Route path="/checkout">
