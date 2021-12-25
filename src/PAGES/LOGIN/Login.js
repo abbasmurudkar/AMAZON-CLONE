@@ -45,6 +45,37 @@ margin-right: auto;
 const LoginContainer = styled.div`
 display: flex;
 flex-direction: column;
-justify-content:center ;
-align-items: center;
+width: 300px;
+height: fit-content;
+border: 2px solid black;
+border-radius: 5px;
+padding: 20px;
+h5{
+    margin-bottom: 5px;
+}
+input{
+    height: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color:white;
+}
+p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+h1{
+    font-weight: 500;
+    margin-bottom:20px;
+}
+button{
+    color: black;
+    background-color: #f0c14b;
+    border-radius: 5px;
+    border: 1px solid #a88734;
+    height: 30px;
+    user-select:none ;
+    margin-top:10px;
+    width: 100%;
+    cursor: pointer;
+}
 `;
